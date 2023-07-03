@@ -1,0 +1,66 @@
+.App {
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  font-size: calc(10px + 1.6vmin);
+}
+
+.App-icon {
+  width: calc(10px + 1.6vmin);
+  height: fit-content;
+  pointer-events: none;
+}
+
+@mixin outline($color) {
+  $shadow: 0px 0px 1px $color;
+  text-shadow: $shadow, $shadow, $shadow, $shadow, $shadow, $shadow;
+}
+
+.App-link {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  height: fit-content;
+  cursor: pointer;
+
+  &::after {
+    content: '';
+    display: block;
+    background: #000;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: 0.8rem;
+    left: 1rem;
+    right: 1rem;
+    margin: auto;
+
+    transition: width 0.3s ease-out;
+  }
+
+  &:hover::after {
+    width: calc(100% - 2rem);
+  }
+
+  input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
