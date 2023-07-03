@@ -1,6 +1,13 @@
+@font-face {
+  font-family: "BrandFont";
+  src: local("BrandFont"),
+   url("./back-light-hind-siliguri-regular.ttf") format("truetype");
+  font-weight: bold;
+ }
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: "BrandFont", -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
