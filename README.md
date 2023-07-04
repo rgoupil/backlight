@@ -5,6 +5,8 @@
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
+<br/>
+
 <div align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="logo-white.svg">
