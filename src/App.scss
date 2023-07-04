@@ -27,6 +27,7 @@
   gap: 0.5rem;
   padding: 1rem;
   height: fit-content;
+  text-decoration: none;
   cursor: pointer;
 
   &::after {
@@ -34,18 +35,16 @@
     display: block;
     background: #000;
     width: 0;
-    height: 2px;
+    height: 1px;
     position: absolute;
-    bottom: 0.8rem;
-    left: 1rem;
-    right: 1rem;
+    bottom: 1rem;
     margin: auto;
 
     transition: width 0.3s ease-out;
   }
 
   &:hover::after {
-    width: calc(100% - 2rem);
+    width: calc(100% - 1.6rem);
   }
 
   input {
@@ -56,11 +55,13 @@
   }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App-signature {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  margin: auto;
+  width: fit-content;
+  font-size: 12px;
+  opacity: 0.2;
 }
