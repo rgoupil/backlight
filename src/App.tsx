@@ -33,13 +33,13 @@ function App() {
   }, [init, color]);
 
   return (
-    <div className="App" style={{ background: color }}>
+    <div className="App" style={{ background: color, '--text-color': textColor } as React.CSSProperties}>
       <label htmlFor="input-color" className="App-link">
-        <span className="App-text" style={{ color: textColor }}>{color}</span>
+        <span className="App-text">{color}</span>
         <input id="input-color" type="color" value={color} onChange={ev => setColor(ev.target.value)} />
       </label>
       {/* eslint-disable-next-line react/jsx-no-target-blank */}
-      <a className="App-signature App-link" style={{ color: textColor }} href="https://rgoupil.com" target="_blank" rel="author noopener">
+      <a className="App-signature App-link" href="https://rgoupil.com" target="_blank" rel="author noopener">
         made with ❤️ by Robin Goupil
       </a>
     </div>
