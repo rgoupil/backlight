@@ -5,6 +5,8 @@
   flex-direction: column;
   font-size: calc(10px + 1.6vmin);
   color: var(--text-color);
+
+  transition: background 0.3s ease-out;
 }
 
 .App-icon {
