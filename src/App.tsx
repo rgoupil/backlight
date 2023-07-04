@@ -2,6 +2,8 @@ import { useCallback, useEffect, useState } from 'react';
 import RGBColor from 'rgbcolor';
 import { ReactComponent as IconLeftArrow } from './arrow-left.svg';
 import { ReactComponent as IconRightArrow } from './arrow-right.svg';
+// import { ReactComponent as IconExpand } from './expand.svg';
+// import { ReactComponent as IconShrink } from './shrink.svg';
 import './App.scss';
 
 const storageKeys = {
@@ -95,7 +97,7 @@ function App() {
             {colorHistory[1]}
           </span>
         </div>
-        <label htmlFor="input-color" className="App-link">
+        <label htmlFor="input-color" className="App-link" style={{ width: '70px' }}>
           <span className="App-text">{color}</span>
           <input id="input-color" type="color" value={color} onChange={ev => setColor(ev.target.value)} onBlur={ev => handleColorChanged(ev.target.value)} />
         </label>

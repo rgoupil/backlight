@@ -23,8 +23,11 @@
 
 .App-action-bar {
   position: absolute;
-  top: 20px;
-  right: 32px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
