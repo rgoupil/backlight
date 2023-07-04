@@ -3,14 +3,14 @@
   min-width: 100vw;
   display: flex;
   flex-direction: column;
-  font-size: calc(10px + 1.6vmin);
+  font-size: 16px;
   color: var(--text-color);
 
   transition: background 0.3s ease-out;
 }
 
 .App-icon {
-  width: calc(10px + 1.6vmin);
+  width: 16px;
   height: fit-content;
   pointer-events: none;
   padding: 1rem;
@@ -105,13 +105,13 @@ svg {
   flex-direction: row;
   align-items: center;
   gap: 0.25rem;
-  font-size: calc(6px + 1.2vmin);
+  font-size: 11px;
 
   .App-swatch {
-    min-width: calc(6px + 1.2vmin);
-    max-width: calc(6px + 1.2vmin);
-    min-height: calc(6px + 1.2vmin);
-    max-height: calc(6px + 1.2vmin);
+    min-width: 12px;
+    max-width: 12px;
+    min-height: 12px;
+    max-height: 12px;
     border: solid 1px var(--text-color);
   }
 }

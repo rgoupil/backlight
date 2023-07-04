@@ -100,11 +100,11 @@ function App() {
           <input id="input-color" type="color" value={color} onChange={ev => setColor(ev.target.value)} onBlur={ev => handleColorChanged(ev.target.value)} />
         </label>
         <div className="App-icon-link" style={{ opacity: colorRedo?.length > 0 ? 1 : 0, pointerEvents: colorRedo?.length > 0 ? 'all' : 'none' }} onClick={redoColor}>
-          <IconRightArrow />
           <span className="App-sub-note">
             <div className="App-swatch" style={{ background: colorRedo[0] }}></div>
             {colorRedo[0]}
           </span>
+          <IconRightArrow />
         </div>
       </div>
       {/* eslint-disable-next-line react/jsx-no-target-blank */}
