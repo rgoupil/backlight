@@ -3,8 +3,6 @@
   min-width: 100vw;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  justify-content: flex-start;
   font-size: calc(10px + 1.6vmin);
   color: var(--text-color);
 }
@@ -13,6 +11,7 @@
   width: calc(10px + 1.6vmin);
   height: fit-content;
   pointer-events: none;
+  padding: 1rem;
 }
 
 @mixin outline($color) {
@@ -20,14 +19,24 @@
   text-shadow: $shadow, $shadow, $shadow, $shadow, $shadow, $shadow;
 }
 
-.App-link {
+.App-action-bar {
+  position: absolute;
+  top: 20px;
+  right: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App-link,
+.App-icon-link {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
   padding: 1rem;
-  height: fit-content;
+  width: fit-content;
+  height: 1rem;
   text-decoration: none;
   color: var(--text-color);
   cursor: pointer;
@@ -39,7 +48,7 @@
     width: 0;
     height: 1px;
     position: absolute;
-    bottom: 1rem;
+    bottom:0.7rem;
     margin: auto;
 
     transition: width 0.3s ease-out, background 0.3s ease-out;
@@ -48,13 +57,25 @@
   &:hover::after {
     width: calc(100% - 1.6rem);
   }
+}
 
-  input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-    pointer-events: none;
-  }
+.App-icon-link::after {
+  display: none;
+}
+
+input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  pointer-events: none;
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+  fill: var(--text-color);
 }
 
 .App-signature {
@@ -70,5 +91,25 @@
 
   &:hover {
     opacity: 1;
+  }
+}
+
+.App-sub-note {
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: calc(6px + 1.2vmin);
+
+  .App-swatch {
+    min-width: calc(6px + 1.2vmin);
+    max-width: calc(6px + 1.2vmin);
+    min-height: calc(6px + 1.2vmin);
+    max-height: calc(6px + 1.2vmin);
+    border: solid 1px var(--text-color);
   }
 }
