@@ -23,7 +23,9 @@
 
 ## About BackLight
 
-<img align="center" src="screenshot.svg" width="90%">
+<a href="https://backlight.rgoupil.com">
+  <img align="center" src="screenshot.svg" width="90%">
+</a>
 
 ### Hacked together in 3 daily meetings with
 
