@@ -29,14 +29,14 @@
   <img align="center" src="screenshot.svg" width="90%">
 </a>
 
-### Hacked together in 3 daily meetings with
+### Hacked together in less than 1 hour
 
 * [![React][React.js]][React-url]
 * [![Vercel][Vercel.com]][Vercel-url]
 
 ## Usage
 
-Simple need simple solution:
+Simple problem, simple solution:
 
 * Change the backlight color by clicking the hex code at the center of the screen
 * Undo/Redo by clicking on the arrows
