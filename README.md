@@ -18,7 +18,7 @@
 <h3 align="center">BackLight</h3>
 
 <p align="center">
-  Fix your lighting for your meetings in 5 seconds
+  Fix your meetings lighting in 5 seconds
   <br/>
   <a href="https://backlight.rgoupil.com"><strong>Try it here for free »</strong></a>
 </p>
