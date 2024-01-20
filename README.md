@@ -20,7 +20,7 @@
 <p align="center">
   Fix your meetings lighting in 5 seconds
   <br/>
-  <a href="https://backlight.rgoupil.com"><strong>Try it here for free »</strong></a>
+  <a href="https://backlight.rgoupil.com"><strong>Available here »</strong></a>
 </p>
 
 ## About BackLight
